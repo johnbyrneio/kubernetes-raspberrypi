@@ -38,7 +38,7 @@ cat >> /etc/dhcpcd.conf <<EOF
 interface eth0
 static ip_address=${PI_IPADDR}/24
 static routers=${PI_GATEWAY}
-static domain_name_servers=1${PI_NAMESERVERS}
+static domain_name_servers=${PI_NAMESERVERS}
 static domain_name=${PI_DOMAIN}
 static domain_name_search=${PI_DOMAIN}
 EOF
